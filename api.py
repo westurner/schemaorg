@@ -969,17 +969,13 @@ class ShowUnit (webapp2.RequestHandler):
           self.response.out.write('<title>404 Not Found.</title><a href="/">404 Not Found.</a><br/><br/>')
           return
 
-def read_file (filename):
+def read_file(filename):
     """Read a file from disk, return it as a single string."""
-    strs = []
-
     file_path = full_path(filename)
-
     import codecs
     log.info("READING FILE: filename=%s file_path=%s " % (filename, file_path ) )
-    for line in codecs.open(file_path, 'r', encoding="utf8").readlines():
-        strs.append(line)
-    return "".join(strs)
+    with codecs.open(file_path, 'r', encoding="utf8") as f:
+        return f.read()
 
 def full_path(filename):
     """convert local file name to full path."""
