@@ -1,5 +1,5 @@
 
-TYPES: #Course1 Course, CourseInstance, hasCourseInstance
+TYPES: #Course1 Course, CourseInstance, hasCourseInstance, courseMode
 
 PRE-MARKUP:
 <!-- A MOOC / free online course. As a simple one-off course -->
@@ -42,7 +42,7 @@ RDFA:
 JSON:
 <!--TODO--> 
 
-TYPES: #Course2 Course, CourseInstance, hasCourseInstance
+TYPES: #Course2 Course, CourseInstance, hasCourseInstance, courseMode
 
 PRE-MARKUP:
 <!-- A college course offered at several locations -->
@@ -110,7 +110,7 @@ RDFA:
 JSON:
 <!--TODO--> 
 
-TYPES: #Course3 Course, CourseInstance, hasCourseInstance
+TYPES: #Course3 Course, CourseInstance, hasCourseInstance, courseMode
 
 PRE-MARKUP:
 <!--A self-paced distance learning course (no events)-->
