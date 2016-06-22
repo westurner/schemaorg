@@ -167,4 +167,52 @@ RDFA:
 JSON:
 <!--TODO-->
 
+TYPES: #Course4 educationalCredentialAwarded
+PRE-MARKUP:
+<!-- A college course leading to an HNC in Accounting -->
+[Course]
+  name:	HNC Accounting
+  educationalCredentialAwarded:	HNC Accounting
+
+MICRODATA:
+<!--TODO--> 
+
+RDFA:
+<body vocab="http://schema.org/" typeof="Course">
+<!-- A college course leading to an HNC in Accounting -->
+<!-- based on http://www.fife.ac.uk/student/courses/course/HCACC -->
+  <h1>Course Details</h1>
+  <h2 property="name educationalCredentialAwarded">HNC Accounting</h2>
+</body>
+
+JSON:
+<!--TODO--> 
+
+TYPES: #Course4 educationalCredentialAwarded
+PRE-MARKUP:
+<!-- Certificate for a distance learning course -->
+[Course]
+  name:	Basic Proofreading
+  educationalCredentialAwarded: completion certificate from PQB
+
+MICRODATA:
+<!--TODO--> 
+
+RDFA:
+<!-- Certificate for a distance learning course -->
+<!--Based on http://www.train4publishing.co.uk/courses/distance-learning/basic-proofreading -->
+<body vocab="http://schema.org/">
+  <div typeof="Course">
+    <h1 property="name">Basic Proofreading</h1>
+    <h2 >What is Included?</h2>
+    <h3>Certificate</h3>
+    <p>A <span property= "educationalCredentialAwarded">completion certificate from 
+      PQB</span> showing whether you have achieved a pass, merit or distinction in your 
+      work.</p>
+  </div>
+</body>
+
+JSON:
+<!--TODO--> 
+
 
